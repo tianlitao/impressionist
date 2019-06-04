@@ -9,7 +9,7 @@ class CreateImpressionsTable < ActiveRecord::Migration<%= Rails::VERSION::MAJOR 
       t.string :view_name
       t.string :request_hash
       t.string :ip_address
-      t.string :user_agent
+      t.text :user_agent
       t.string :session_hash
       t.text :message
       t.text :referrer
